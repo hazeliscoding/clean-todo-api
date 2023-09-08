@@ -3,8 +3,8 @@
 public abstract class BaseEntity
 {
     public int Id { get; protected set; }
-    private List<IDomainEvent>? _domainEvents;
-    public IReadOnlyCollection<IDomainEvent>? DomainEvents => _domainEvents?.AsReadOnly();
+    private List<IDomainEvent> _domainEvents;
+    public IReadOnlyCollection<IDomainEvent> DomainEvents => _domainEvents.AsReadOnly();
 
     protected void AddDomainEvent(IDomainEvent eventItem)
     {
