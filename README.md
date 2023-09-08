@@ -29,7 +29,7 @@ This will build the required images and start the containers. Once running, you 
 ## 🌱 Getting Started
 1. Clone this repository:
 ```
-git clone https://github.com/nekomata97/clean-architecture-demo.git
+git clone https://github.com/nekomatadev/clean-architecture-demo.git
 ```  
 2. Navigate to the project directory:
 ```
