@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  todolist.api:
+    image: ${DOCKER_REGISTRY-}todolistapi
+    build:
+      context: .
+      dockerfile: src/TodoList.API/Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - mysql
+ 
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_DATABASE: todo_db
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./db-init:/docker-entrypoint-initdb.d
