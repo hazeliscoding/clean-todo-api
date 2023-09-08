@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.API", "src\TodoLis
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C727AAC6-FCE7-4C5A-83EF-56B4E0D08B94}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{416DECE0-0B48-4057-99CD-3CE2664EF29F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.ArchitectureTests", "test\TodoList.ArchitectureTests\TodoList.ArchitectureTests.csproj", "{8F5A8CBF-9E88-456C-9F31-E9448465DB42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{C727AAC6-FCE7-4C5A-83EF-56B4E0D08B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C727AAC6-FCE7-4C5A-83EF-56B4E0D08B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C727AAC6-FCE7-4C5A-83EF-56B4E0D08B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F5A8CBF-9E88-456C-9F31-E9448465DB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F5A8CBF-9E88-456C-9F31-E9448465DB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F5A8CBF-9E88-456C-9F31-E9448465DB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F5A8CBF-9E88-456C-9F31-E9448465DB42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{599A36D3-D35F-4BE3-8CED-5146140FE511} = {716BD6D4-3D8E-4B5F-88C7-5B6DA7B20207}
 		{E9D65161-5131-4970-A8EB-77181B7D99E1} = {716BD6D4-3D8E-4B5F-88C7-5B6DA7B20207}
 		{B9EF36A1-95CE-4A57-9392-B0686FFDEBC7} = {716BD6D4-3D8E-4B5F-88C7-5B6DA7B20207}
+		{8F5A8CBF-9E88-456C-9F31-E9448465DB42} = {416DECE0-0B48-4057-99CD-3CE2664EF29F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3CE59B15-9407-470B-99AB-22E773BD87E7}
