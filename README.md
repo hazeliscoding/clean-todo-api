@@ -5,7 +5,7 @@ An example of a Clean Architecture approach in an ASP.NET Core Web API project, 
 * **Clean Architecture**: Clear separation of concerns with four main layers: API, Application, Domain, and Infrastructure.
 * **Dapper ORM**: Flexible and fast micro ORM.
 * **MySQL**: Robust open-source relational database.
-* **CQRS** with MediatR: Command Query Responsibility Segregation to clearly differentiate read and write actions.
+* **CQRS with MediatR**: Command Query Responsibility Segregation to clearly differentiate read and write actions.
 * **Docker-Compose**: Easily containerize the application for consistent development and deployment experiences.
 
 ## 📚 Project Structure
