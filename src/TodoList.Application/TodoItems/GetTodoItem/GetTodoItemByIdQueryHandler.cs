@@ -19,6 +19,7 @@ public class GetTodoItemByIdQueryHandler : IRequestHandler<GetTodoItemByIdQuery,
 
         return new TodoItemResponse()
         {
+            Id = todoItem.Id,
             Title = todoItem.Title,
             DueDate = todoItem.DueDate,
             IsCompleted = todoItem.IsCompleted,

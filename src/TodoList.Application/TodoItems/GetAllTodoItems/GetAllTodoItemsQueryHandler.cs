@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using TodoList.Domain.TodoItems;
 
-namespace TodoList.Application.TodoItems.GetAllPendingTodoItems;
+namespace TodoList.Application.TodoItems.GetAllTodoItems;
 
 public class GetAllTodoItemsQueryHandler : IRequestHandler<GetAllTodoItemsQuery, List<TodoItemResponse>>
 {
@@ -18,6 +18,7 @@ public class GetAllTodoItemsQueryHandler : IRequestHandler<GetAllTodoItemsQuery,
 
         return todoItems.Select(todoItem => new TodoItemResponse
         {
+            Id = todoItem.Id,
             Title = todoItem.Title,
             DueDate = todoItem.DueDate,
             IsCompleted = todoItem.IsCompleted,

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TodoList.Application.TodoItems.CreateTodoItem;
 using TodoList.Application.TodoItems.DeleteTodoItem;
-using TodoList.Application.TodoItems.GetAllPendingTodoItems;
+using TodoList.Application.TodoItems.GetAllTodoItems;
 using TodoList.Application.TodoItems.GetTodoItem;
 using TodoList.Application.TodoItems.UpdateTodoItem;
 
@@ -38,6 +38,10 @@ namespace TodoList.API.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _mediator.Send(new GetTodoItemByIdQuery() { Id = id });
+
+            if (result == null)
+                return NotFound();
+
             return Ok(result);
         }
 
