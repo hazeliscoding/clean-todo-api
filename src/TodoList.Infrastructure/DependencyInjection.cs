@@ -1,4 +1,5 @@
 ﻿using System.Configuration;
+using Dapper;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TodoList.Application.Context;
@@ -22,6 +23,8 @@ public static class DependencyInjection
         services.AddTransient<IUnitOfWork, DapperUnitOfWork>(c => new DapperUnitOfWork(connectionString));
 
         services.AddSingleton(new MySqlConnectionFactory(connectionString));
+
+        SqlMapper.AddTypeHandler(new DateOnlyHandler());
 
         return services;
     }

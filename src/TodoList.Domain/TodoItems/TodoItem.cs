@@ -6,7 +6,7 @@ namespace TodoList.Domain.TodoItems;
 public class TodoItem : BaseEntity
 {
     public string Title { get; private set; }
-    public DateTime DueDate { get; private set; }
+    public DateOnly DueDate { get; private set; }
     public bool IsCompleted { get; private set; }
     public string Priority { get; private set; }
 
@@ -15,7 +15,7 @@ public class TodoItem : BaseEntity
         // This empty constructor is required for Dapper materialization
     }
 
-    public TodoItem(string title, DateTime dueDate, PrioritySuggestionService priorityService)
+    public TodoItem(string title, DateOnly dueDate, PrioritySuggestionService priorityService)
     {
         SetTitle(title);
         SetDueDate(dueDate);
@@ -37,7 +37,7 @@ public class TodoItem : BaseEntity
         Title = title;
     }
 
-    public void SetDueDate(DateTime dueDate)
+    public void SetDueDate(DateOnly dueDate)
     {
         DueDate = dueDate;
     }
