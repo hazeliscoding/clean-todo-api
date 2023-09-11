@@ -1,5 +1,5 @@
 # Clean Architecture with ASP.NET Core, Dapper, and MySQL
-An example of a Clean Architecture approach in an ASP.NET Core Web API project, leveraging Dapper as the ORM and MySQL as the database.
+A simple Todo App API used as an example of a Clean Architecture approach in an ASP.NET Core, leveraging Dapper as the ORM and MySQL as the database.
 
 ## 🚀 Features
 * **Clean Architecture**: Clear separation of concerns with four main layers: API, Application, Domain, and Infrastructure.
